@@ -41,9 +41,9 @@ function showData(data){
 
 // Get next and previous songs
 async function getMoreSongs(url) {
-    const res = await fetch(`https://cors-anywhere.herokuapp.com/${url}`)
-    const data = await res.json();
+    const res = await fetch(`https://cors-access-allow.herokuapp.com/${url}`)
 
+    const data = await res.json();
    
     showData(data);
 }
